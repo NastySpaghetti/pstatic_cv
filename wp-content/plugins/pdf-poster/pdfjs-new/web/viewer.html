@@ -1,49 +1,31 @@
 <!DOCTYPE html>
-<!--
-Copyright 2012 Mozilla Foundation
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
-Adobe CMap resources are covered by their own copyright but the same license:
-
-    Copyright 1990-2015 Adobe Systems Incorporated.
-
-See https://github.com/adobe-type-tools/cmap-resources
---><html dir="ltr" mozdisallowselectionprint>
+<html dir="ltr" mozdisallowselectionprint>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="google" content="notranslate">
-    <meta name="robots" content="noindex">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PDF.js viewer</title>
 
     <link rel="stylesheet" href="https://veynandlucille.fr/wp-content/plugins/pdf-poster/pdfjs-new/web/viewer.css">
 
-    <!-- This snippet is used in production (included from viewer.html) -->
+    
     <link rel="resource" type="application/l10n" href="https://veynandlucille.fr/wp-content/plugins/pdf-poster/pdfjs-new/web/locale/locale.properties">
     <script src="https://veynandlucille.fr/wp-content/plugins/pdf-poster/pdfjs-new/build/pdf.js?pro"></script>
     <script src="https://veynandlucille.fr/wp-content/plugins/pdf-poster/pdfjs-new/web/viewer.js?pro" id="viewerjs"></script>
     <script src="https://veynandlucille.fr/wp-content/plugins/pdf-poster/pdfjs-new/web/custom.js?ver=2.2.3"></script>
 
-    <style>@media (max-width: 770px) {
+    <style>
+      @media (max-width: 770px) {
         #outerContainer #presentationMode {
           display: inline-block;
         }
       }
       .doorHanger {
         background: #3f3f3f;
-      }</style>
+      }
+    </style>
   </head>
 
   <body tabindex="1" class="loadingInProgress">
@@ -69,12 +51,12 @@ See https://github.com/adobe-type-tools/cmap-resources
         </div>
         <div id="sidebarResizer" class="hidden"></div>
       </div>
-      <!-- sidebarContainer -->
+      
 
       <div id="mainContainer">
         <div class="findbar hidden doorHanger" id="findbar">
           <div id="findbarInputContainer">
-            <input id="findInput" class="toolbarField" title="Find" placeholder="Find in document…" tabindex="91" data-l10n-id="find_input">
+            <input id="findInput" class="toolbarField" title="Find" placeholder="Find in document&hellip;" tabindex="91" data-l10n-id="find_input">
             <div class="splitToolbarButton">
               <button id="findPrevious" class="toolbarButton findPrevious" title="Find the previous occurrence of the phrase" tabindex="92" data-l10n-id="find_previous">
                 <span data-l10n-id="find_previous_label">Previous</span>
@@ -102,7 +84,7 @@ See https://github.com/adobe-type-tools/cmap-resources
             <span id="findMsg" class="toolbarLabel"></span>
           </div>
         </div>
-        <!-- findbar -->
+        
 
         <div id="secondaryToolbar" class="secondaryToolbar hidden doorHangerRight">
           <div id="secondaryToolbarButtonContainer">
@@ -179,12 +161,12 @@ See https://github.com/adobe-type-tools/cmap-resources
 
             <div class="horizontalToolbarSeparator spreadModeButtons"></div>
 
-            <button id="documentProperties" class="secondaryToolbarButton documentProperties" title="Document Properties…" tabindex="68" data-l10n-id="document_properties">
-              <span data-l10n-id="document_properties_label">Document Properties…</span>
+            <button id="documentProperties" class="secondaryToolbarButton documentProperties" title="Document Properties&hellip;" tabindex="68" data-l10n-id="document_properties">
+              <span data-l10n-id="document_properties_label">Document Properties&hellip;</span>
             </button>
           </div>
         </div>
-        <!-- secondaryToolbar -->
+        
 
         <div class="toolbar">
           <div id="toolbarContainer">
@@ -298,7 +280,7 @@ See https://github.com/adobe-type-tools/cmap-resources
           <textarea id="errorMoreInfo" hidden="true" readonly></textarea>
         </div>
       </div>
-      <!-- mainContainer -->
+      
 
       <div id="overlayContainer" class="hidden">
         <div id="passwordOverlay" class="container hidden">
@@ -384,7 +366,7 @@ See https://github.com/adobe-type-tools/cmap-resources
         <div id="printServiceOverlay" class="container hidden">
           <div class="dialog">
             <div class="row">
-              <span data-l10n-id="print_progress_message">Preparing document for printing…</span>
+              <span data-l10n-id="print_progress_message">Preparing document for printing&hellip;</span>
             </div>
             <div class="row">
               <progress value="0" max="100"></progress>
@@ -396,9 +378,9 @@ See https://github.com/adobe-type-tools/cmap-resources
           </div>
         </div>
       </div>
-      <!-- overlayContainer -->
+      
     </div>
-    <!-- outerContainer -->
+    
     <div id="printContainer"></div>
   </body>
 </html>
