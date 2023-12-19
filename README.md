@@ -1,1 +1,0 @@
-# pstatic_cv
